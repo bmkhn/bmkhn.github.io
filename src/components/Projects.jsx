@@ -29,7 +29,7 @@ export default function Projects() {
               key={project.id}
               project={project}
               onClick={() => setSelected(project)}
-              featured={project.id === 'membership-system'}
+
             />
           ))}
         </div>

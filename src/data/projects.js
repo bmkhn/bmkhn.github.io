@@ -2,8 +2,8 @@ export const projects = [
   {
     id: "membership-system",
     title: "Membership Management System",
-    category: "Production System",
-    date: "Jul 2026 – Present",
+    category: "Contract Work",
+    date: "Jul 2026 – Aug 2026",
     organization: "The Fraternal Order of Eagles — Philippine Eagles",
     description:
       "Developed a web-based Membership Management System to centralize membership records and organizational information and support branch administrative operations.",
@@ -40,11 +40,10 @@ export const projects = [
       "QR-based member profile generation",
       "CSV import/export for bulk data operations",
     ],
-    image: "/images/projects/membership-system.png",
-    liveUrl: "",
-    githubUrl: "",
+    liveUrl: "https://eagleswithoutborders.com/",
+    githubUrl: "https://github.com/bmkhn/Eagles-Without-Borders",
     role: "Sole Developer",
-    status: "Production",
+    status: "Live",
     deployment: "Hostinger",
   },
   {
@@ -64,6 +63,7 @@ export const projects = [
       "MiniLM-L6-v2",
       "Semantic Search",
       "CI/CD",
+      "Database Design",
     ],
     features: [
       "Project lifecycle management",
@@ -79,16 +79,16 @@ export const projects = [
       "RESTful API architecture",
       "PostgreSQL for complex data relationships",
     ],
-    image: "/images/projects/pmis.png",
+
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/uesopmis-coder/UESO-PMIS",
     role: "Full-Stack Developer",
     status: "Completed",
   },
   {
     id: "hris",
     title: "Human Resource Information System",
-    category: "Contract Work",
+    category: "Internship Project",
     date: "Feb 2026 – May 2026",
     organization: "DepEd — Schools Division of Puerto Princesa City",
     description:
@@ -109,9 +109,9 @@ export const projects = [
       "Redeveloped an existing system by migrating from vanilla PHP to Laravel",
       "Improved and expanded existing functionality",
     ],
-    image: "/images/projects/hris.png",
+
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/bmkhn/HRIS-DepEd-Laravel",
     role: "Developer",
     status: "Completed",
   },
@@ -136,9 +136,9 @@ export const projects = [
       "Quote management",
       "Data import/export",
     ],
-    image: "/images/projects/mnemosyne.png",
+
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/bmkhn/Mnemosyne",
     role: "Sole Developer",
     status: "Completed",
   },
@@ -171,9 +171,9 @@ export const projects = [
     highlights: [
       "Privacy-first: all tracking data stored locally on the user's device",
     ],
-    image: "/images/projects/sophrosyne.png",
+
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/bmkhn/Sophrosyne",
     role: "Sole Developer",
     status: "Completed",
   },

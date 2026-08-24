@@ -1,11 +1,7 @@
-export default function ProjectCard({ project, onClick, featured = false }) {
-  const hasImage = project.image
-
+export default function ProjectCard({ project, onClick }) {
   return (
     <article
-      className={`group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-300 hover:border-[var(--color-border-secondary)] cursor-pointer ${
-        featured ? 'md:grid md:grid-cols-[1fr_320px]' : ''
-      }`}
+      className="group relative rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-300 hover:border-[var(--color-border-secondary)] cursor-pointer"
       onClick={onClick}
       onKeyDown={(e) => { if (e.key === 'Enter') onClick() }}
       tabIndex={0}
@@ -19,10 +15,10 @@ export default function ProjectCard({ project, onClick, featured = false }) {
           <span className="text-xs font-medium tracking-wider uppercase text-[var(--color-text-tertiary)]">
             {project.type || project.category}
           </span>
-          {project.status === 'Production' && (
+          {project.status && (
             <span className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-600 dark:text-emerald-400">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-              Production
+              {project.status}
             </span>
           )}
         </div>
@@ -91,34 +87,6 @@ export default function ProjectCard({ project, onClick, featured = false }) {
           </button>
         </div>
       </div>
-
-      {/* Image (for featured) */}
-      {featured && (
-        <div className="hidden md:flex items-center justify-center p-6 bg-[var(--color-surface-secondary)]">
-          <div className="w-full h-full min-h-[200px] rounded-lg overflow-hidden bg-[var(--color-surface-tertiary)] flex items-center justify-center">
-            <img
-              src={hasImage}
-              alt={`${project.title} screenshot`}
-              className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-              onError={(e) => {
-                e.target.style.display = 'none'
-                e.target.nextSibling.style.display = 'flex'
-              }}
-            />
-            {/* Placeholder graphic */}
-            <div className="hidden items-center justify-center w-full h-full">
-              <div className="text-center">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-2 text-[var(--color-text-tertiary)]">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <span className="text-xs text-[var(--color-text-tertiary)]">{project.title}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </article>
   )
 }

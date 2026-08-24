@@ -51,11 +51,16 @@ export const experiences = [
   {
     title: "Freelance Administrative Support",
     company: "",
-    date: "Jun 2025 – Apr 2026",
-    location: "",
-    description: "Freelance administrative support work.",
-    responsibilities: [],
-    technologies: [],
+    date: "Jun 2025 – Aug 2026",
+    location: "Remote",
+    description: "Freelance administrative and design support for clients and organizations.",
+    responsibilities: [
+      "Created and prepared various print and digital design materials",
+      "Assisted with administrative tasks including reviewing and verifying submitted information",
+      "Coordinated updates and revisions to ensure deliverables met project requirements",
+      "Performed graphic design, image editing, and layout work",
+    ],
+    technologies: ["Data Entry", "Administrative Assistance", "Graphic Design"],
     minor: true,
   },
 ];

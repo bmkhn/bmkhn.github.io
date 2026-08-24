@@ -26,10 +26,10 @@ export default function ProjectDetail({ project, onClose }) {
             <span className="text-xs font-medium tracking-wider uppercase text-[var(--color-text-tertiary)]">
               {project.type || project.category}
             </span>
-            {project.status === 'Production' && (
+            {project.status && (
               <span className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-600 dark:text-emerald-400">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                Production
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              {project.status}
               </span>
             )}
           </div>

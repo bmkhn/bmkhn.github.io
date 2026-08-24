@@ -1,7 +1,20 @@
+import { useState } from 'react'
 import { site } from '../data/site'
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false)
   const hasLinks = site.email || site.github || site.linkedin
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(site.email)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // Fallback
+      window.location.href = `mailto:${site.email}`
+    }
+  }
 
   return (
     <section id="contact" className="py-24 border-t border-[var(--color-border)]">
@@ -20,16 +33,24 @@ export default function Contact() {
           {hasLinks && (
             <div className="flex flex-wrap gap-4 section-reveal">
               {site.email && (
-                <a
-                  href={`mailto:${site.email}`}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--color-primary)] text-white text-sm font-medium hover:bg-[var(--color-primary-hover)] transition-colors"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
-                  </svg>
-                  Email
-                </a>
+                <div className="relative">
+                  <button
+                    onClick={copyEmail}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--color-primary)] text-white text-sm font-medium hover:bg-[var(--color-primary-hover)] transition-colors"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    {copied ? 'Copied!' : 'Email'}
+                  </button>
+                  {/* Toast */}
+                  {copied && (
+                    <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] text-xs text-[var(--color-text-secondary)] shadow-lg whitespace-nowrap animate-fadeIn">
+                      Email copied to clipboard
+                    </div>
+                  )}
+                </div>
               )}
               {site.github && (
                 <a

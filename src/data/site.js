@@ -30,4 +30,6 @@ export const site = {
   ],
   
   // SEO
- 
+  siteTitle: "Developer Portfolio",
+  siteDescription: "IT graduate and software developer specializing in full-stack web applications, information systems, and database-driven platforms.",
+};

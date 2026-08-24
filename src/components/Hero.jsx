@@ -1,5 +1,23 @@
 import { site } from '../data/site'
 
+function Portrait({ name }) {
+  return (
+    <div className="section-reveal hidden md:block">
+      <div className="relative">
+        <div className="w-56 h-64 lg:w-64 lg:h-72 rounded-xl bg-[var(--color-surface-secondary)] border border-[var(--color-border)] overflow-hidden">
+          <img
+            src="/images/profile/me.jpg"
+            alt={`${name} — portrait`}
+            className="w-full h-full object-cover"
+            onError={(e) => { e.target.parentElement.style.display = 'none' }}
+          />
+        </div>
+        <div className="absolute -bottom-2 -right-2 w-full h-full rounded-xl border border-[var(--color-primary)]/20 -z-10" />
+      </div>
+    </div>
+  )
+}
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
@@ -67,28 +85,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - Portrait */}
-          <div className="section-reveal hidden md:block">
-            <div className="relative">
-              <div className="w-56 h-64 lg:w-64 lg:h-72 rounded-xl bg-[var(--color-surface-secondary)] border border-[var(--color-border)] overflow-hidden flex items-center justify-center">
-                <img
-                  src="/images/profile/me.jpg"
-                  alt={`${site.name} — portrait`}
-                  className="w-full h-full object-cover"
-                  onError={(e) => { e.target.style.display = 'none' }}
-                />
-                {/* Placeholder if no image */}
-                <div className="absolute inset-0 flex items-center justify-center text-[var(--color-text-tertiary)]">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="opacity-40">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                </div>
-              </div>
-              {/* Decorative accent line */}
-              <div className="absolute -bottom-2 -right-2 w-full h-full rounded-xl border border-[var(--color-primary)]/20 -z-10" />
-            </div>
-          </div>
+          {/* Right - Portrait (only shows if image exists) */}
+          <Portrait name={site.name} />
         </div>
       </div>
     </section>
