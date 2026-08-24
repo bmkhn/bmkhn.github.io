@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "membership-system",
     title: "Membership Management System",
-    category: "Contract Work",
+    category: "Contract Project",
     date: "Jul 2026 – Aug 2026",
     organization: "The Fraternal Order of Eagles — Philippine Eagles",
     description:
@@ -14,10 +14,12 @@ export const projects = [
       "Tailwind CSS",
       "Alpine.js",
       "JavaScript",
+      "HTML",
       "Git",
       "RBAC",
       "Database Design",
       "CI/CD",
+      "System Deployment",
     ],
     features: [
       "Member management",
@@ -59,9 +61,9 @@ export const projects = [
       "Django",
       "PostgreSQL",
       "REST APIs",
-      "Figma",
-      "MiniLM-L6-v2",
       "Semantic Search",
+      "Machine Learning",
+      "Figma",
       "CI/CD",
       "Database Design",
     ],
@@ -99,6 +101,7 @@ export const projects = [
       "MySQL",
       "Git",
       "Database Design",
+      "Technical Documentation",
     ],
     features: [
       "Backend migration from vanilla PHP to Laravel",

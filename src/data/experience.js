@@ -2,7 +2,7 @@ export const experiences = [
   {
     title: "Full-Stack Developer",
     company: "The Fraternal Order of Eagles — Philippine Eagles",
-    date: "Jun 2026 – Present",
+    date: "Jun 2026 – Aug 2026",
     location: "",
     description: "Sole developer responsible for designing, building, and deploying a production membership management system.",
     responsibilities: [
@@ -15,7 +15,7 @@ export const experiences = [
       "QR-based member profile generation",
       "System administration",
     ],
-    technologies: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Alpine.js"],
+    technologies: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Alpine.js", "JavaScript", "HTML", "Git", "RBAC", "Database Design", "CI/CD", "System Deployment"],
     featured: true,
   },
   {
@@ -30,7 +30,7 @@ export const experiences = [
       "Technical documentation",
       "HRIS development and expansion",
     ],
-    technologies: ["Laravel", "PHP", "MySQL"],
+    technologies: ["Laravel", "PHP", "MySQL", "Git", "Database Design", "Technical Documentation"],
   },
   {
     title: "Full-Stack Developer",
@@ -46,7 +46,7 @@ export const experiences = [
       "CI/CD pipeline setup",
       "Production deployment",
     ],
-    technologies: ["Python", "Django", "PostgreSQL", "REST APIs"],
+    technologies: ["Python", "Django", "PostgreSQL", "REST APIs", "Semantic Search", "Machine Learning", "Figma", "CI/CD", "Database Design"],
   },
   {
     title: "Freelance Administrative Support",
@@ -60,7 +60,7 @@ export const experiences = [
       "Coordinated updates and revisions to ensure deliverables met project requirements",
       "Performed graphic design, image editing, and layout work",
     ],
-    technologies: ["Data Entry", "Administrative Assistance", "Graphic Design"],
+    technologies: ["Data Entry", "Administrative Assistance", "Graphic Design", "Layout Design", "Print Design", "Canva", "Adobe Photoshop", "Microsoft Office"],
     minor: true,
   },
 ];

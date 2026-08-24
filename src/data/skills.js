@@ -30,11 +30,12 @@ export const skillCategories = [
     skills: [
       { name: "REST APIs", featured: false },
       { name: "RBAC", featured: false },
-      { name: "Authentication", featured: false },
       { name: "Database Design", featured: false },
-      { name: "System Architecture", featured: false },
       { name: "CI/CD", featured: false },
-      { name: "Deployment", featured: false },
+      { name: "System Deployment", featured: false },
+      { name: "Technical Documentation", featured: false },
+      { name: "Semantic Search", featured: false },
+      { name: "Machine Learning", featured: false },
     ],
   },
   {
@@ -43,6 +44,9 @@ export const skillCategories = [
       { name: "Git", featured: true },
       { name: "Figma", featured: false },
       { name: "Chrome Extensions", featured: false },
+      { name: "Canva", featured: false },
+      { name: "Adobe Photoshop", featured: false },
+      { name: "Microsoft Office", featured: false },
     ],
   },
 ];
