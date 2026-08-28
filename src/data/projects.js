@@ -118,39 +118,39 @@ export const projects = [
     role: "Developer",
     status: "Completed",
   },
-  {
-    id: "mnemosyne",
-    title: "Mnemosyne",
-    category: "Personal Project",
-    type: "Chrome Extension",
-    date: "Dec 2025 – Jun 2026",
-    description:
-      "Chrome extension for tracking reading progress and saving quotes from online materials.",
-    technologies: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Chrome Extensions API",
-    ],
-    features: [
-      "Material organization",
-      "Chapter organization",
-      "Reading progress tracking",
-      "Quote management",
-      "Data import/export",
-    ],
+  // {
+  //   id: "mnemosyne",
+  //   title: "Mnemosyne",
+  //   category: "Personal Project",
+  //   type: "Chrome Extension",
+  //   date: "Dec 2025 – Jun 2026",
+  //   description:
+  //     "Chrome extension for tracking reading progress and saving quotes from online materials.",
+  //   technologies: [
+  //     "JavaScript",
+  //     "HTML",
+  //     "CSS",
+  //     "Chrome Extensions API",
+  //   ],
+  //   features: [
+  //     "Material organization",
+  //     "Chapter organization",
+  //     "Reading progress tracking",
+  //     "Quote management",
+  //     "Data import/export",
+  //   ],
 
-    liveUrl: "",
-    githubUrl: "https://github.com/bmkhn/Mnemosyne",
-    role: "Sole Developer",
-    status: "Completed",
-  },
+  //   liveUrl: "",
+  //   githubUrl: "https://github.com/bmkhn/Mnemosyne",
+  //   role: "Sole Developer",
+  //   status: "Completed",
+  // },
   {
     id: "sophrosyne",
     title: "Sophrosyne",
     category: "Personal Project",
     type: "Chrome Extension",
-    date: "Jun 2026 - Aug 2026",
+    date: "Jun 2026 – Aug 2026",
     description:
       "Privacy-first productivity extension for monitoring website usage and improving digital productivity, reworked with React 19 and TypeScript.",
     technologies: [
