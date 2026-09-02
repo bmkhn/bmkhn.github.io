@@ -147,7 +147,7 @@ export const projects = [
   // },
   {
     id: "sophrosyne",
-    title: "Sophrosyne",
+    title: "Sophrosyne — Productivity Chrome Extension",
     category: "Personal Project",
     type: "Chrome Extension",
     date: "Jun 2026 – Aug 2026",
@@ -189,7 +189,7 @@ export const projects = [
   },
   {
     id: "rikai",
-    title: "Rikai",
+    title: "Rikai — Desktop Manga OCR & Translation App",
     category: "Personal Project",
     type: "Desktop App",
     date: "Aug 2026",
