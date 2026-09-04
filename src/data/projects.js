@@ -3,7 +3,7 @@ export const projects = [
     id: "membership-system",
     title: "Membership Management System",
     category: "Contract Project",
-    date: "Jul 2026 – Aug 2026",
+    date: "Jun 2026 – Aug 2026",
     organization: "The Fraternal Order of Eagles — Philippine Eagles",
     description:
       "Developed a web-based Membership Management System to centralize membership records and organizational information and support branch administrative operations.",
@@ -65,6 +65,11 @@ export const projects = [
       "Figma",
       "CI/CD",
       "Database Design",
+      "Django REST Framework",
+      "Celery",
+      "Redis",
+      "OAuth",
+      "OpenAPI",
     ],
     features: [
       "Project lifecycle management",
@@ -101,6 +106,8 @@ export const projects = [
       "Git",
       "Database Design",
       "Technical Documentation",
+      "PDF Export (DOMPDF)",
+      "Excel Import/Export (Maatwebsite Excel)",
     ],
     features: [
       "Backend migration from vanilla PHP to Laravel",

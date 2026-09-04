@@ -30,7 +30,7 @@ export const experiences = [
       "Technical documentation",
       "HRIS development and expansion",
     ],
-    technologies: ["Laravel", "PHP", "MySQL", "Git", "Database Design", "Technical Documentation"],
+    technologies: ["Laravel", "PHP", "MySQL", "Git", "Database Design", "Technical Documentation", "PDF Export (DOMPDF)", "Excel Import/Export (Maatwebsite Excel)"],
   },
   {
     title: "Full-Stack Developer",
@@ -46,7 +46,7 @@ export const experiences = [
       "CI/CD pipeline setup",
       "Production deployment",
     ],
-    technologies: ["Python", "Django", "PostgreSQL", "REST APIs", "Semantic Search", "Machine Learning", "Figma", "CI/CD", "Database Design"],
+    technologies: ["Python", "Django", "PostgreSQL", "REST APIs", "Semantic Search", "Figma", "CI/CD", "Database Design"],
   },
   {
     title: "Freelance Administrative Support",
