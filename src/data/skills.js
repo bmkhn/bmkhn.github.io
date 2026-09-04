@@ -11,15 +11,17 @@ export const skillCategories = [
     ],
   },
   {
-    name: "Frameworks",
+    name: "Frameworks & Libraries",
     skills: [
       { name: "Django", featured: true },
-      { name: "Laravel", featured: true },
       { name: "Django REST Framework", featured: false },
+      { name: "Laravel", featured: true },
+      { name: "React 19", featured: false },
       { name: "Tailwind CSS", featured: false },
       { name: "Alpine.js", featured: false },
-
-      
+      { name: "Electron", featured: false },
+      { name: "Celery", featured: false },
+      { name: "PyTorch", featured: false },
     ],
   },
   {
@@ -41,6 +43,7 @@ export const skillCategories = [
       { name: "Background Jobs & Scheduling", featured: false },
       { name: "CI/CD", featured: false },
       { name: "System Deployment", featured: false },
+      { name: "Server Setup & Administration (Hostinger)", featured: false },
       { name: "Technical Documentation", featured: false },
     ],
   },
@@ -51,7 +54,6 @@ export const skillCategories = [
       { name: "Semantic Search", featured: false },
       { name: "PDF Export (DOMPDF)", featured: false },
       { name: "Excel Export (Maatwebsite Excel)", featured: false },
-      { name: "PyTorch", featured: false },
     ],
   },
   {
@@ -60,7 +62,6 @@ export const skillCategories = [
       { name: "Git", featured: true },
       { name: "Figma", featured: false },
       { name: "Chrome Extensions", featured: false },
-      { name: "Electron", featured: false },
     ],
   },
   {
@@ -69,6 +70,6 @@ export const skillCategories = [
       { name: "Canva", featured: false },
       { name: "Adobe Photoshop", featured: false },
       { name: "Microsoft Office", featured: false },
-    ]
-  }
+    ],
+  },
 ];
