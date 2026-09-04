@@ -62,7 +62,6 @@ export const projects = [
       "PostgreSQL",
       "REST APIs",
       "Semantic Search",
-      "Machine Learning",
       "Figma",
       "CI/CD",
       "Database Design",
@@ -192,7 +191,7 @@ export const projects = [
     title: "Rikai — Desktop Manga OCR & Translation App",
     category: "Personal Project",
     type: "Desktop App",
-    date: "Aug 2026",
+    date: "Aug 2026 - Sep 2026",
     description:
       "Japanese manga OCR desktop app with instant translation. Capture text from anywhere on screen, get recognition and English translation in one click.",
     technologies: [
