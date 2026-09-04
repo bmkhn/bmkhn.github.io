@@ -5,12 +5,19 @@ function Portrait({ name }) {
     <div className="section-reveal hidden md:block">
       <div className="relative">
         <div className="w-56 h-64 lg:w-64 lg:h-72 rounded-xl bg-[var(--color-surface-secondary)] border border-[var(--color-border)] overflow-hidden">
-          <img
-            src="/images/profile/me.jpg"
-            alt={`${name} — portrait`}
-            className="w-full h-full object-cover"
-            onError={(e) => { e.target.parentElement.style.display = 'none' }}
-          />
+          <picture>
+            <source srcSet="/images/profile/me.webp" type="image/webp" />
+            <img
+              src="/images/profile/me.jpg"
+              alt={`${name} — portrait`}
+              width="600"
+              height="600"
+              fetchpriority="high"
+              decoding="async"
+              className="w-full h-full object-cover"
+              onError={(e) => { e.target.parentElement.style.display = 'none' }}
+            />
+          </picture>
         </div>
         <div className="absolute -bottom-2 -right-2 w-full h-full rounded-xl border border-[var(--color-primary)]/20 -z-10" />
       </div>
